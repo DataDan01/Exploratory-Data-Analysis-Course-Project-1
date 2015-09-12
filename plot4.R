@@ -48,12 +48,12 @@ plot(x=elect.sub[,FullTime],y=elect.sub[,Sub_metering_1],type="n",xlab="",ylab="
 lines(elect.sub[,FullTime],elect.sub[,Sub_metering_1],col="black")
 lines(elect.sub[,FullTime],elect.sub[,Sub_metering_2],col="red")
 lines(elect.sub[,FullTime],elect.sub[,Sub_metering_3],col="blue")
-legend("topright",lwd=2,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright",lwd=2,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty="n")
 
 ##4
 plot(x=elect.sub[,FullTime],y=elect.sub[,Global_reactive_power], ##What to plot
      type="line", ##Plot it as a line
-     xlab="", ##Leave the x-axis label blank
+     xlab="datetime", ##Leave the x-axis label blank
      ylab="Global_reactive_power") ##y-axis label
 
 dev.off()
